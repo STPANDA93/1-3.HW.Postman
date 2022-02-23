@@ -5,7 +5,7 @@ Protocol: http
 IP: 162.55.220.72
 Port: 5005
 
-> EP_1 
++ EP_1 
 Method: GET 
 EndPoint: /get_method
 request url params: 
@@ -13,14 +13,14 @@ request url params:
  age: int
 
 ## response: 
-+ [
+> [
     “Str”,
     “Str”
 ]
 
 ==================
 
-> EP_2
++ EP_2
 Method: POST
 EndPoint: /user_info_3
 request form data: 
@@ -29,7 +29,7 @@ request form data:
  salary: int
 
 ## response: 
-+ {'name': name,
+> {'name': name,
           'age': age,
           'salary': salary,
           'family': {'children': [['Alex', 24], ['Kate', 12]],
@@ -38,7 +38,7 @@ request form data:
 
 ==================
 
-> EP_3
++ EP_3
 Method: GET
 EndPoint: /object_info_1
 request url params: 
@@ -47,7 +47,7 @@ request url params:
  weight: int
 
 ## response: 
-+ {'name': name,
+> {'name': name,
           'age': age,
           'daily_food': weight * 0.012,
           'daily_sleep': weight * 2.5}
@@ -55,7 +55,7 @@ request url params:
 
 ==================
 
-> EP_4
++ EP_4
 Method: GET
 EndPoint: /object_info_2
 request url params: 
@@ -64,7 +64,7 @@ request url params:
  salary: int
 
 ## response: 
-+ {'start_qa_salary': salary,
+> {'start_qa_salary': salary,
           'qa_salary_after_6_months': salary * 2,
           'qa_salary_after_12_months': salary * 2.7,
           'qa_salary_after_1.5_year': salary * 3.3,
@@ -77,7 +77,7 @@ request url params:
 
 ==================
 
-> EP_5
++ EP_5
 Method: GET
 EndPoint: /object_info_3
 request url params: 
@@ -86,7 +86,7 @@ request url params:
  salary: int
 
 ## response: 
-+ {'name': name,
+> {'name': name,
           'age': age,
           'salary': salary,
           'family': {'children': [['Alex', 24], ['Kate', 12]],
@@ -100,7 +100,7 @@ request url params:
 
 ==================
 
-> EP_6
++ EP_6
 Method: GET
 EndPoint: /object_info_4
 request url params: 
@@ -109,14 +109,14 @@ request url params:
  salary: int
 
 ## response: 
-+ {'name': name,
+> {'name': name,
           'age': int(age),
           'salary': [salary, str(salary * 2), str(salary * 3)]}
 
 
 ==================
 
-> EP_7
++ EP_7
 Method: POST
 EndPoint: /user_info_2
 request form data: 
@@ -125,7 +125,7 @@ request form data:
  salary: int
 
 ## response: 
-+ {'start_qa_salary': salary,
+> {'start_qa_salary': salary,
           'qa_salary_after_6_months': salary * 2,
           'qa_salary_after_12_months': salary * 2.7,
           'qa_salary_after_1.5_year': salary * 3.3,
